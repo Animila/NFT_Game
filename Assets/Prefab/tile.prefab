@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 601633524679798403}
   - component: {fileID: 1018129786080515070}
   - component: {fileID: 6577519524363691692}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!61 &1018129786080515070
@@ -124,4 +124,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 1.5
   destroy_ground: -11
-  ground: {fileID: 2409026272572967442}
+  ground:
+  - {fileID: 4762122749765201622, guid: a0603a314ca0cbb41888de69eed9cbfb, type: 3}
+  - {fileID: 1199122092374530025, guid: e14f74b5e9c8a6b448ec4fe99719ca51, type: 3}
+  - {fileID: 4809805473619233872, guid: f5ac1826043dd8044adf837345f3000c, type: 3}
+  timeRemaining: 60
+  timerIsRunning: 1
