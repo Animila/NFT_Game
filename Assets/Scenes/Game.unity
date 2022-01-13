@@ -452,7 +452,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1195986649}
-  - component: {fileID: 1195986650}
   m_Layer: 0
   m_Name: Ground_Spawn
   m_TagString: Untagged
@@ -474,18 +473,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1195986650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1195986648}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7733fbbf104eb8b4cb431b84204f20d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1333370788
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,7 +1043,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af29c095f8beb344687b3971ca14ae0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jump: 10
+  xVelocity: 5
+  yVelocity: 8
+  isBrouser: 0
 --- !u!50 &2116323822
 Rigidbody2D:
   serializedVersion: 4
@@ -1077,7 +1066,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &2116323823
 BoxCollider2D:
   m_ObjectHideFlags: 0
