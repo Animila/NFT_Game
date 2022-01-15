@@ -21,7 +21,7 @@ public class Camera_control : MonoBehaviour
 
         this.transform.position = new Vector3(){
             x = this.playerTransform.position.x,
-            y = this.playerTransform.position.y + 2.150523f, 
+            y = this.playerTransform.position.y + 1.270094f, 
             z = this.playerTransform.position.z - 1,
         };
     }
@@ -32,7 +32,7 @@ public class Camera_control : MonoBehaviour
             Vector3 target = new Vector3()
             {
                 x = this.playerTransform.position.x,
-                y = this.playerTransform.position.y +   2.150523f,
+                y = this.playerTransform.position.y + 1.270094f, 
                 z = this.playerTransform.position.z - 1,
             };
 
