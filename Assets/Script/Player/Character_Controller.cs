@@ -39,6 +39,9 @@ public class Character_Controller : MonoBehaviour
             _animator_controller.SetBool("Jumping", false);
             canJump = true;
         }
+        if(other.collider.tag == "Enemy"){
+            rb.velocity = new Vector2(0f, 18f);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D coll) {
